@@ -1,0 +1,14 @@
+{
+  "name": "devs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "mahir": "json-server --watch db.json --port 5050"
+  },
+  "author": "Md Mahir",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <a href="#add_devs" data-bs-toggle="modal" class="btn btn-primary">Add new devs</a>
+        <hr>
+        <div class="card">
+          <div class="card-body">
+
+
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Cell</th>
+                  <th>Photo</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#</td>
+                  <td>Md Mahir</td>
+                  <td>mdmahir@gmail.com</td>
+                  <td>01879545582</td>
+                  <td></td>
+                  <td>
+                    <a href="#view" data-bs-toggle="modal" class="btn btn-info btn-sm"> <i class="fa fa-eye"></i></a>
+                    <a href="#edit" data-bs-toggle="modal" class="btn btn-warning btn-sm"> <i
+                        class="fa fa-edit"></i></a>
+                    <a href="#trash" data-bs-toggle="modal" class="btn btn-danger btn-sm"> <i
+                        class="fa fa-trash"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Devs add modal  -->
+
+  <div class="modal fade" id="add_devs">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Add new devs</h2>
+        </div>
+        <div class="modal-body">
+
+          <form action="">
+            <div class="form-group mb-3">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="text" id="emal" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="cell">Cell</label>
+              <input type="text" id="cell" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="photo">Photo</label>
+              <input type="text" id="photo" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="skill">Skill</label>
+              <select name="" id="skill" class="form-select">
+                <option value="">-Select-</option>
+                <!-- load skills here  -->
+              </select>
+            </div>
+
+            <div class="form-group mb-3">
+              <input type="submit" class="btn btn-success w-100">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="view">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="edit">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="trash">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./functions.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
